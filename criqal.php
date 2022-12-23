@@ -26,3 +26,9 @@
  }
 
  add_action( 'wp_head', 'criqal_seo_tags' );
+
+ function criqal_author_bio($content){
+   return $content. '<h1>Gazi Akrer</h1>';
+ }
+
+ add_filter( 'the_content', 'criqal_author_bio');
